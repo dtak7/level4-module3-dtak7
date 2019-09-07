@@ -35,6 +35,7 @@ class ExceptionsTest {
 		ExceptionMethods methods = new ExceptionMethods();
 		try {
 		assertEquals(5, methods.divide(10, 2));
+		assertEquals(10,methods.divide(20, 2));
 		}
 		catch(IllegalArgumentException e) {
 			assertEquals(0,methods.divide(10, 0));
@@ -48,7 +49,9 @@ class ExceptionsTest {
 	//5. Complete the JUnit test method to test the reverseStringMethod.
 	@Test
 	public void testReverseString() {
-		
+		ExceptionMethods methods = new ExceptionMethods();
+		assertEquals("ybbob", methods.reverseString("bobby"));
+		assertEquals("ABBA", methods.reverseString("ABBA"));
 	}
 	
 	

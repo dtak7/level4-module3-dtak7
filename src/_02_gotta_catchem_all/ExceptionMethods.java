@@ -9,4 +9,11 @@ public class ExceptionMethods {
 		return quotient;
 		
 	}
+	String reverseString(String s) throws IllegalStateException{
+		String backwards="";
+		for(int i =s.length()-1;i>=0;i--) {
+			backwards+=s.charAt(i);
+		}
+		return backwards;
+	}
 }
